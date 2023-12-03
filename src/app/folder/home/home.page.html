@@ -1,4 +1,4 @@
-<ion-header >
+<ion-header>
   <ion-toolbar>
     <ion-title class="ion-text-center">معلومات عن الدكتور جمال</ion-title>
     <ion-buttons slot="end">
@@ -7,26 +7,49 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding-top">
+<ion-content class=" ion-padding-top">
+ 
 
-  <ion-row class="ion-justify-content-end">
-    <ion-col size="12" sizeMd="12" sizeSm="12">
-      <ion-card  dir="rtl">
-        <ion-item   lines="none">
-          <div class="index" slot="end">
-            1
-          </div>
-          <ion-label>
-              <h2>
-                <ion-text>Title</ion-text>
-              </h2>
-              <p>
-                <ion-text>Description goes here</ion-text>
-              </p>
-          </ion-label>
-        </ion-item>
-      </ion-card>
-    </ion-col>
-  </ion-row>
+  <div class="container">
 
+
+    <ion-item lines="none">
+      <ion-label dir="rtl"> الصورة ( اختياري ) </ion-label>
+    </ion-item>
+    
+    <ion-item class="" lines="none">
+      <ion-img src="../../../assets/icon/favicon.png"></ion-img>
+      <ion-buttons>
+        <ion-button>تغيير الصورة</ion-button>
+        <ion-button>حذف الصورة</ion-button>
+      </ion-buttons>
+    </ion-item> 
+    
+    <ion-item lines="none" class="ion-text-center input-item"  [button]="true">
+      <label for="file-inp">
+        <ion-icon name="image-outline"></ion-icon>
+        <input id="file-inp" style="visibility:hidden;" type="file" />
+      </label>
+
+    </ion-item>
+
+
+  <ion-item lines="none">
+    <ion-label dir="rtl"> الوصف </ion-label>
+  </ion-item>
+
+  <div dir="ltr" class="NgxEditor__Wrapper">
+    <ngx-editor-menu [editor]="editor"> </ngx-editor-menu>
+    <ngx-editor
+    [editor]="editor"
+    [(ngModel)]="html"
+    [disabled]="false"
+    [placeholder]="'Type here...'"
+    ></ngx-editor>
+  </div>
+  <ion-buttons dir="ltr">
+    <ion-button fill="solid">حفظ</ion-button>
+    <ion-button>إلغاء</ion-button>
+  </ion-buttons>
+</div>
 </ion-content>
