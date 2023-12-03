@@ -3,6 +3,7 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-font-family:font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -236,7 +237,7 @@
 }
 
 html {
-  /* 
+  /*
    * For more information on dynamic font scaling, visit the documentation:
    * https://ionicframework.com/docs/layout/dynamic-font-scaling
    */

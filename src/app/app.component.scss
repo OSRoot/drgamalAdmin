@@ -117,3 +117,10 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+.avatar-icon{
+  background: #eee;
+  margin: 16px;
+  border-radius: 50%;
+  min-width: 50px;
+  min-height: 50px;
+}

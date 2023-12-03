@@ -1,10 +1,12 @@
 <ion-app>
   <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
+    <ion-menu  side="end" contentId="main-content" type="overlay">
+      <ion-content dir="rtl">
         <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi&#64;ionicframework.com</ion-note>
+          <ion-list-header>
+            <ion-icon name="person"  size="large" class="avatar-icon"></ion-icon>
+            Osroot</ion-list-header>
+          <ion-note>osama.elsayeed&#64;elkenanygroup.com</ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
